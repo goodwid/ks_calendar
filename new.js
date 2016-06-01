@@ -1,7 +1,7 @@
 moment.locale();
 
 function populateHeader() { // populates the month, year, and days of week
-  const body    = '<body></body>';
+  // const body    = '<body></body>';
   const section = '<section></section>';
   const header  = '<header></header>';
   const hgroup  = '<hgroup></hgroup>';
@@ -62,7 +62,11 @@ function hideOverflow() { // hides the unused days of the month
 }
 
 function highlightToday() { // relying on the ids added during populateDays() to highlight today.
-  $(`#${moment().format('D')}`).css('font-weight', '400').css('background', '#e0e0e0');
+  $(`#${moment().format('D')}`).css('font-weight', '400').css('background', '#ccc');
+}
+
+function insertItem() {
+
 }
 
 function populateCalendar() {
